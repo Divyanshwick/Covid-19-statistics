@@ -267,6 +267,9 @@ button{
     .Display p{
         font-size: small;
     }
+    .Display{
+        box-shadow: 3px 3px 6px greenyellow;
+    }
     .navbar a{
         display:none;
     }
