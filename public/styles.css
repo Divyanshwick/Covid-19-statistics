@@ -50,7 +50,7 @@ body{
     display:flex;
     background-color:#555;
     border:ridge;
-    border-color:red blue green yellow;
+    border-color:greenyellow;
 }
 .navbar a{
 color:white;
@@ -78,7 +78,7 @@ text-align:center;
 .header{
     height:250px;
     clip-path:polygon(0 0,100% 0,100% 100%,75% 85%,50% 100%,25% 85%,0 100%);
-    border:1px solid greenyellow;
+    border:3px solid greenyellow;
     
     background: black;
 }
@@ -112,7 +112,9 @@ text-align:center;
     background-repeat: repeat;
     background-position: center;
     height:100%;
+    border:3px solid greenyellow;
     margin-top: -10%;
+    padding-bottom: 50px;
 }
 #heading{
     position:absolute;
@@ -123,6 +125,7 @@ text-align:center;
     /* margin-top:-300px; */
     padding:5px;
     background:linear-gradient(#181818,rgba(0,0,0,0.2));
+    border:3px solid greenyellow;
     color:grey;
     transition:0.6s;
     clip-path:polygon(0 0,50% 20%,100% 0,100% 60%,50% 100%,0 60%);
@@ -131,7 +134,7 @@ text-align:center;
     margin-top:30px;
     letter-spacing:0.9px;
     font-family: 'Kaushan Script', cursive;
-    color:#ffffcc
+    color:#fafafa
 }
 #heading:hover{
     color:white;
@@ -166,7 +169,7 @@ text-align:center;
     padding:5px;
     width:52%;
     color:antiquewhite;
-    border:2px solid greenyellow;
+    border:2px solid black;
     text-shadow: 2px 2px 10px black;
 
 }
@@ -178,4 +181,6 @@ text-align:center;
 .footer{
     background: black;
     height:150px;
+    border:3px solid greenyellow;
+    border-bottom: none;
 }
