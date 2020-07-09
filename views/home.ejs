@@ -33,39 +33,56 @@
 
 <!-- MAIN -->
 <div class="main">
-    <div class="A">
-        <div class="Display">
-            <p><strong>Cases - </strong></p>
-        </div>
-        <div class="Display">
-            <p><%= data.Global.NewConfirmed %></p>
-        </div>
-    </div> 
-    <div class="A">
-        <div class="Display">
-            <p><strong>Cases - </strong></p>
-        </div>
-        <div class="Display">
-            <p><%= data.Global.NewConfirmed %></p>
-        </div>
-    </div> 
-    <div class="A">
-        <div class="Display">
-            <p><strong>Cases - </strong></p>
-        </div>
-        <div class="Display">
-            <p><%= data.Global.NewConfirmed %></p>
-        </div>
-    </div> 
-    <div class="A">
-        <div class="Display">
-            <p><strong>Cases - </strong></p>
-        </div>
-        <div class="Display">
-            <p><%= data.Global.NewConfirmed %></p>
-        </div>
-    </div> 
-    
+    <div class="container">
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color:#f0ad4e;">New Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.NewConfirmed %></p>
+            </div>
+        </div> 
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color:#f0ad4e;">Total Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.TotalConfirmed %></p>
+            </div>
+        </div> 
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color:#d9534f;">New Death Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.NewDeaths %></p>
+            </div>
+        </div> 
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color:#d9534f;">Total Death Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.TotalDeaths %></p>
+            </div>
+        </div> 
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color: #5cb85c;">New Recovered Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.NewRecovered %></p>
+            </div>
+        </div> 
+        <div class="A">
+            <div class="Display">
+                <p><strong style="color: #5cb85c;">Total Recovered Cases - </strong></p>
+            </div>
+            <div class="Display">
+                <p style="color: aliceblue;"><%= data.Global.TotalRecovered %></p>
+            </div>
+        </div> 
+    </div>
 </div>
 
 
