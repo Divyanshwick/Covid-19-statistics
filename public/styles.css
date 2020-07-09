@@ -111,6 +111,32 @@ text-align:center;
     height:100vh;
     margin-top: -10%;
 }
+#heading{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin:auto;
+    text-align:center;
+    /* margin-top:-300px; */
+    padding:5px;
+    background:linear-gradient(#181818,rgba(0,0,0,0.2));
+    color:grey;
+    transition:0.6s;
+    clip-path:polygon(0 0,50% 20%,100% 0,100% 60%,50% 100%,0 60%);
+    
+
+   
+}
+#heading h2{
+    margin-top:50px;
+    letter-spacing:0.9px;
+    font-family: 'Kaushan Script', cursive;
+}
+#heading:hover{
+    color:white;
+    transform:translateY(-10px);
+    font-size:18px;
+}
 .container{
     padding-top: 200px;
 }
