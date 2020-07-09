@@ -107,15 +107,18 @@ text-align:center;
 
 /* MAIN */
 .main{
-    background:#ffffcc;
-    height:100vh;
+    background:url("https://st2.depositphotos.com/1084193/11315/v/950/depositphotos_113150382-stock-illustration-abstract-tech-background-futuristic-technology.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    height:100%;
     margin-top: -10%;
 }
 #heading{
     position:absolute;
     width:150px;
     height:150px;
-    margin:10% 0 0 44.3%;
+    margin:12% 0 0 44.3%;
     text-align:center;
     /* margin-top:-300px; */
     padding:5px;
@@ -125,9 +128,10 @@ text-align:center;
     clip-path:polygon(0 0,50% 20%,100% 0,100% 60%,50% 100%,0 60%);
 }
 #heading h2{
-    margin-top:50px;
+    margin-top:30px;
     letter-spacing:0.9px;
     font-family: 'Kaushan Script', cursive;
+    color:#ffffcc
 }
 #heading:hover{
     color:white;
@@ -135,7 +139,7 @@ text-align:center;
     font-size:18px;
 }
 .container{
-    padding-top: 200px;
+    padding-top: 350px;
 }
 .A{
     display: flex;
@@ -168,4 +172,10 @@ text-align:center;
 }
 .Display p{
     font-size: 20px;
+}
+
+/* FOOTER */
+.footer{
+    background: black;
+    height:150px;
 }
