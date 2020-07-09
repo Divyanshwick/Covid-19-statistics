@@ -67,10 +67,23 @@ text-align:center;
     
     
 }
-.active{
+form{
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height:30px;
+    margin:-30% 0 0 42%;
+    text-align:center; 
+}
+button{
     background-color: #4CAF50;
-    margin-left:740px ;
-    font-size:20px;
+    /* margin-left:389%; */
+    width:40px;
+    height:30px;
+    
+    /* margin-top:-400px; */
 }
 /* NAVBAR */
 
@@ -183,4 +196,80 @@ text-align:center;
     height:150px;
     border:3px solid greenyellow;
     border-bottom: none;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width:600px){
+    body{
+        height:100%;
+        width:100%;
+        overflow-x: hidden;
+        
+    }
+    .header{
+       height:30%;
+       width:100%;
+       position:relative;
+       text-align:center;
+       padding:10px;
+       clip-path: none;
+    }
+    .header h1{
+        font-size: 30px;
+        margin:4% 0 0 0;
+        
+        
+    }
+    .header img{
+        margin:5px 0 0 0;
+    }
+    #second{
+        display: none;
+    }
+    .navbar{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+    }
+    .navbar a{
+    color:white;
+    
+    text-decoration:none;
+    text-align:center;
+    
+    }
+    .overlay-logo{
+        text-align: center;
+    }
+    form{
+        margin:4% 0 0 0;
+    }
+    input{
+        margin:0 0 0 0;
+    }
+    button{
+        margin:0 0 0 0;
+    }
+    .master{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:40%;
+    }
+    #heading{
+        margin:0 0 0 0;
+    }
+    .container{
+        padding-top: 25%;
+    }
+    .Display p{
+        font-size: small;
+    }
+    .navbar a{
+        display:none;
+    }
+
+    
 }
