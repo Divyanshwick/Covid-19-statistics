@@ -7,9 +7,9 @@ var bodyParser = require("body-parser");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.get("/",function(req,res){
-    res.redirect("/global");
-});
+// app.get("/",function(req,res){
+//     res.redirect("/global");
+// });
 
 app.get("/global",function(req,res){
     axios("https://api.covid19api.com/summary")
@@ -51,9 +51,10 @@ app.get("/india",function(req,res){
 });
 
 app.get("/india/:state",function(req,res){
+    var state = req.query.state.charAt(0).toUpperCase() + req.query.state.slice(1).toLowerCase();
     axios("https://api.covid19india.org/data.json")
     .then(function(response){
-        res.render("state.ejs");
+        res.render("state.ejs",{data : response.data,state : state});
     })
 });
 

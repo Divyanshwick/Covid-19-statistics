@@ -131,9 +131,9 @@ button{
 }
 #heading{
     position:absolute;
-    width:150px;
-    height:150px;
-    margin:12% 0 0 44.3%;
+    width:200px;
+    height:200px;
+    margin:13.5% 0 0 42%;
     text-align:center;
     /* margin-top:-300px; */
     padding:5px;
@@ -144,18 +144,18 @@ button{
     clip-path:polygon(0 0,50% 20%,100% 0,100% 60%,50% 100%,0 60%);
 }
 #heading h2{
-    margin-top:30px;
+    margin-top:40px;
     letter-spacing:0.9px;
     font-family: 'Kaushan Script', cursive;
     color:#fafafa
 }
 #heading:hover{
     color:white;
-    transform:translateY(-10px);
-    font-size:18px;
+    transform:translateY(-8px);
+    /* font-size:18px; */
 }
 .container{
-    padding-top: 350px;
+    padding-top: 400px;
 }
 .flag{
     position:relative;
@@ -229,6 +229,36 @@ button{
     padding:10px;
 }
 
+/* Main of state.ejs */
+.container1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+}
+table{
+    border:1px solid black;
+    width:50%;
+    height:400px;
+}
+th{
+    text-align: center;
+    padding:10px;
+    font-size: 30px;
+}
+td{
+    text-align: center;
+    padding:5px;
+    border:1px solid black;
+}
+tr:nth-child(odd){
+    background:#ffffcc;
+}
+tr:nth-child(even){
+    background:greenyellow;
+}
+
+
 
 
 /* FOOTER */
@@ -271,6 +301,8 @@ button{
         display:flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
        
     }
     .navbar a{
@@ -278,6 +310,7 @@ button{
     
     text-decoration:none;
     text-align:center;
+    
     
     }
     .overlay-logo{
@@ -301,10 +334,16 @@ button{
     }
     #heading{
         margin:0 0 0 0;
+        margin-top:15% ;
     }
+   
     .container{
-        padding-top: 25%;
+        padding-top: 50%;
     }
+    .container1{
+        padding-top: 50%;
+    }
+    
     .Display p{
         font-size: small;
         padding:0;
@@ -312,7 +351,7 @@ button{
     .Display{
         box-shadow: 3px 3px 6px greenyellow;
     }
-    .navbar a{
+    .navbar #India{
         display:none;
     }
     .A1{
@@ -333,4 +372,9 @@ button{
     
 
     
+}
+@media only screen and (min-width:768px){
+    .navbar #Flag{
+        display: none;
+    }
 }
