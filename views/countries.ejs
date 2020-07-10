@@ -40,10 +40,10 @@
             <% if(cntName.Country.toLowerCase() == country){ %>
                 <% var cntCode = cntName.CountryCode.toLowerCase(); %>
                 <div class="A1">
-                    <div class="Display">
+                    <div class="Display1">
                         <img class="flag" src = "https://cdn.countryflags.com/thumbs/<%= cntName.Slug.toLowerCase() %>/flag-800.png">
                     </div>
-                    <div class="Display">
+                    <div class="Display1">
                         <!-- <p style="color: aliceblue;"><%= cntName.NewConfirmed %></p> -->
                         <p style="color: aliceblue;"><strong style="color:#f0ad4e;">Total Confirmed</strong> <br> <%= cntName.TotalConfirmed %></p>
                         <!-- <p style="color: aliceblue;"><%= cntName.NewDeaths %></p> -->
