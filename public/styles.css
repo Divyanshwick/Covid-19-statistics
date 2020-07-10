@@ -157,6 +157,11 @@ button{
 .container{
     padding-top: 350px;
 }
+.flag{
+    position:relative;
+    width:300px;
+    height:200px;
+}
 .A{
     display: flex;
     width:50%;
@@ -188,10 +193,33 @@ button{
 }
 .Display p{
     font-size: 20px;
+    padding:10px;
+}
+.A1{
+    display: flex;
+    
+    width:50%;
+    color:black;
+    text-shadow: 2px 2px 10px whitesmoke;
+    margin-left:25%;
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:20px;
+    border:2px solid black;
+    background: rgba(0,0,0);
+    transition: 1s; 
+}
+.A1:hover{
+    transform:translateY(-5px);
+    padding:5px;
+    width:52%;
+    color:antiquewhite;
+    border:2px solid black;
+    text-shadow: 2px 2px 10px black;
+
 }
 
 
-  
 
 /* FOOTER */
 .footer{
@@ -276,6 +304,15 @@ button{
     .navbar a{
         display:none;
     }
+    .A1{
+        flex-wrap:wrap;
+        flex-direction: row;
+    }
+    .flag{
+        width:130px;
+        height:90px;
+    }
+    
 
     
 }
