@@ -37,7 +37,7 @@
     <div class="master"><div id="heading"><h2>Stats of <%= state %> </h2></div></div>
     <div class="container1">
         <% data.statewise.forEach(function(stName){ %>
-            <% if(stName.state == state){ %>
+            <% if(stName.state.toLowerCase() == state.toLowerCase()){ %>
                 <table>
                     <th><%= state %></th>
                     <tr>

@@ -37,7 +37,7 @@
     <div class="master"><div id="heading"><h2>Stats of <%= country %> </h2></div></div>
     <div class="container">
         <% data.Countries.forEach(function(cntName){ %>
-            <% if(cntName.Country == country){ %>
+            <% if(cntName.Country.toLowerCase() == country.toLowerCase()){ %>
                 
                 <div class="A1">
                     <div class="Display1">
