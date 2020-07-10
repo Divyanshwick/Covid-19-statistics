@@ -7,9 +7,9 @@ var bodyParser = require("body-parser");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
-// app.get("/",function(req,res){
-//     res.redirect("/global");
-// });
+app.get("/",function(req,res){
+    res.redirect("/global");
+});
 
 app.get("/global",function(req,res){
     axios("https://api.covid19api.com/summary")
