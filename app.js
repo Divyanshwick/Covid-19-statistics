@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.get("/global",function(req,res){
+app.get("/",function(req,res){
     axios("https://api.covid19api.com/summary")
         .then(function(response){
             res.render("home.ejs",{data : response.data});
@@ -19,7 +19,7 @@ app.get("/global",function(req,res){
 
         });
 });
-app.get("/global/:country",function(req,res){
+app.get("/:country",function(req,res){
     var country = req.query.country.toLowerCase();
     axios("https://api.covid19api.com/summary")
         .then(function(response){
