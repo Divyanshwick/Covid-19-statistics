@@ -34,11 +34,11 @@
 
 <!-- MAIN -->
 <div class="main">
-    <div class="master"><div id="heading"><h2>Stats of <%= country.toUpperCase() %> </h2></div></div>
+    <div class="master"><div id="heading"><h2>Stats of <%= country %> </h2></div></div>
     <div class="container">
         <% data.Countries.forEach(function(cntName){ %>
-            <% if(cntName.Country.toLowerCase() == country){ %>
-                <% var cntCode = cntName.CountryCode.toLowerCase(); %>
+            <% if(cntName.Country == country){ %>
+                
                 <div class="A1">
                     <div class="Display1">
                         <img class="flag" src = "https://cdn.countryflags.com/thumbs/<%= cntName.Slug.toLowerCase() %>/flag-800.png">

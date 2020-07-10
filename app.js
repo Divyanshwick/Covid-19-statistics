@@ -8,6 +8,10 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/",function(req,res){
+    res.redirect("/global");
+});
+
+app.get("/global",function(req,res){
     axios("https://api.covid19api.com/summary")
         .then(function(response){
             res.render("home.ejs",{data : response.data});
@@ -19,8 +23,8 @@ app.get("/",function(req,res){
 
         });
 });
-app.get("/:country",function(req,res){
-    var country = req.query.country.toLowerCase();
+app.get("/global/:country",function(req,res){
+    var country = req.query.country.charAt(0).toUpperCase() + req.query.country.slice(1).toLowerCase();
     axios("https://api.covid19api.com/summary")
         .then(function(response){
             res.render("countries.ejs",{data : response.data , country : country});
@@ -32,6 +36,31 @@ app.get("/:country",function(req,res){
         });
 });
 
+app.get("/india",function(req,res){
+    axios("https://api.covid19india.org/data.json")
+    .then(function(response){
+        res.render("india.ejs",{data : response.data});
+        
+    })
+    .catch(function(err){
+        if(err){
+            res.render(err);
+        }
+    });
+    
+});
+
+app.get("/india/:state",function(req,res){
+    axios("https://api.covid19india.org/data.json")
+    .then(function(response){
+        res.render("state.ejs");
+    })
+});
+
+// app.get("/India/:state",function(req,res){
+    
+// });
+    
 app.listen(PORT,function(){
     console.log("Hello!! server is working!!");
 });
