@@ -157,6 +157,22 @@ button{
 .container{
     padding-top: 400px;
 }
+.container2{
+    
+    height: 200px;
+    background:linear-gradient(#181818,rgba(0,0,0,0.2));
+    color:whitesmoke;
+    text-align: center;
+    border:2px solid greenyellow;
+    border-radius: 12px;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px 20px 0 20px;
+}
 .flag{
     position:relative;
     width:300px;
@@ -241,6 +257,7 @@ table{
     width:50%;
     height:400px;
     margin-top: 50px;
+    
 }
 th{
     text-align: center;
@@ -370,6 +387,9 @@ tr:nth-child(even){
         width:130px;
         height:90px;
     }
+    table{
+        width:300px;
+    }
     
 
     
@@ -377,5 +397,9 @@ tr:nth-child(even){
 @media only screen and (min-width:768px){
     .navbar #Flag{
         display: none;
+    }
+    .container2{
+        width:500px;
+        margin:0 auto;
     }
 }

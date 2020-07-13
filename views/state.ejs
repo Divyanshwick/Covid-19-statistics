@@ -36,36 +36,52 @@
 <div class="main">
     <div class="master"><div id="heading"><h2>Stats of <%= state %> </h2></div></div>
     <div class="container1">
+        <% var temp = 0; %>
         <% data.statewise.forEach(function(stName){ %>
             <% if(stName.state.toLowerCase() == state.toLowerCase()){ %>
+                <% temp = 1; %>
                 <table>
                     <th><%= state %></th>
                     <tr>
-                        <td style="color:#f0ad4e;"><strong>Total Active</strong><br><span style="color:black"><%= stName.active %></span></td>
+                        <td style="color:#000"><strong>Total Active</strong><br><span style="color:black"><%= stName.active %></span></td>
                         
                     </tr>
                     <tr>
-                        <td style="color:#f0ad4e;"><strong>Total Confirmed</strong><br><span style="color:black"><%= stName.confirmed %></span></td>
+                        <td style="color:#000;"><strong>Total Confirmed</strong><br><span style="color:black"><%= stName.confirmed %></span></td>
                         
                     </tr>
                     <tr>
-                        <td style="color:#d9534f;"><strong>Total Deaths</strong><br><span style="color:black"><%= stName.deaths %></span></td>
+                        <td style="color:#000;"><strong>Total Deaths</strong><br><span style="color:black"><%= stName.deaths %></span></td>
                         
                     </tr>
                     <tr>
-                        <td style="color:#5cb85c;"><strong>Total Recovered</strong><br><span style="color:black"> <%= stName.recovered %></span></td>
+                        <td style="color:#000;"><strong>Total Recovered</strong><br><span style="color:black"> <%= stName.recovered %></span></td>
                         
                     </tr>
                     <tr style="padding-top:5px;">
-                        <br><td ><strong>Latest News About <%= state %></strong><br><br><%= stName.statenotes %></td>
+                        <br>
+                        <td ><strong>Latest News About <%= state %></strong><br><br>
+                            <% if(stName.statenotes == ""){ %>
+                                <p>No latest news right now</p>
+                            <% } %>
+                            <p><%= stName.statenotes %></p>
+                           
+
+
+                        
+                        </td>
                     </tr>
                     
                 </table>
 
             <% } %>
+            
         <% }) %>
+        <% if(temp == 0){ %>
+            <%- include("partials/stateErr") %>
+        <% } %>
        
-    
+
     </div>
 </div>
 
