@@ -400,6 +400,7 @@ tr:nth-child(even){
     }
     .container2{
         width:500px;
-        margin:0 auto;
+        margin-left:auto;
+        margin-right: auto;
     }
 }

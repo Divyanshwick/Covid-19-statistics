@@ -37,10 +37,10 @@
 <div class="main">
     <div class="master"><div id="heading"><h2>Stats of <%= country %> </h2></div></div>
     <div class="container">
-        <% var temp = 0; %>
+        <% var flag = 0; %>
         <% data.Countries.forEach(function(cntName){ %>
             <% if(cntName.Country.toLowerCase() == country.toLowerCase()){ %>
-                <% temp = 1; %>
+                <% flag = 1; %>
                 
                 <div class="A1">
                     <div class="Display1">
@@ -61,7 +61,7 @@
 
 
         <% }) %>
-        <% if(temp == 0){ %>
+        <% if(flag == 0){ %>
             <%- include("partials/countryErr") %>
         <% } %>
         
