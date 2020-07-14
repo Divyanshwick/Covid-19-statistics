@@ -360,6 +360,7 @@ tr:nth-child(even){
    
     .container{
         padding-top: 50%;
+     
     }
     .container1{
         padding-top: 50%;
@@ -370,8 +371,10 @@ tr:nth-child(even){
         padding:0;
     }
     .A{
-        width:300px;
-        margin-left:3%;
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
     }
     .Display{
         box-shadow: 3px 3px 6px greenyellow;
