@@ -369,8 +369,13 @@ tr:nth-child(even){
         font-size: small;
         padding:0;
     }
+    .A{
+        width:250px;
+        margin-left:11%;
+    }
     .Display{
         box-shadow: 3px 3px 6px greenyellow;
+        
     }
     .navbar #India{
         display:none;
