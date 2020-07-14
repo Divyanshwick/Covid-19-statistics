@@ -47,15 +47,34 @@
                         
                     </tr>
                     <tr>
-                        <td style="color:#000;"><strong>Total Confirmed</strong><br><span style="color:black"><%= stName.confirmed %></span></td>
+                        <td style="color:#000;"><strong>Total Confirmed</strong><br><span style="color:black"><%= stName.confirmed %></span>
+                        
+                            <% if(stName.deltaconfirmed >= 0){ %>
+                                <span style="color:green;"> + <%= stName.deltaconfirmed %></span>
+                            <%} else {%>
+                            <span style="color:#d9534f;"> + <%= stName.deltaconfirmed %></span>
+                            <% } %>
+                        </td>
                         
                     </tr>
                     <tr>
-                        <td style="color:#000;"><strong>Total Deaths</strong><br><span style="color:black"><%= stName.deaths %></span></td>
+                        <td style="color:#000;"><strong>Total Deaths</strong><br><span style="color:black"><%= stName.deaths %></span>
+                            <% if(stName.deltadeaths >= 0){ %>
+                                <span style="color:green;"> + <%= stName.deltadeaths %></span>
+                            <%} else {%>
+                            <span style="color:#d9534f;"> + <%= stName.deltadeaths %></span>
+                            <% } %>
+                        </td>
                         
                     </tr>
                     <tr>
-                        <td style="color:#000;"><strong>Total Recovered</strong><br><span style="color:black"> <%= stName.recovered %></span></td>
+                        <td style="color:#000;"><strong>Total Recovered</strong><br><span style="color:black"> <%= stName.recovered %></span>
+                            <% if(stName.deltarecovered >= 0){ %>
+                                <span style="color:green;"> + <%= stName.deltarecovered %></span>
+                            <%} else {%>
+                            <span style="color:#d9534f;"> + <%= stName.deltarecovered %></span>
+                            <% } %>
+                        </td>
                         
                     </tr>
                     <tr style="padding-top:5px;">

@@ -263,6 +263,9 @@ th{
     text-align: center;
     padding:10px;
     font-size: 30px;
+    background-color:#034f84 ;
+    border:1px solid black;
+    color:aliceblue;
 }
 td{
     text-align: center;
@@ -270,10 +273,10 @@ td{
     border:1px solid black;
 }
 tr:nth-child(odd){
-    background:#ffffcc;
+    background:#92a8d1;
 }
 tr:nth-child(even){
-    background:greenyellow;
+    background:#deeaee;
 }
 
 
