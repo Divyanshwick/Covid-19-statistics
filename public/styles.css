@@ -376,6 +376,9 @@ tr:nth-child(even){
         margin-right: 5%;
         
     }
+    .A:hover{
+        width:90%;
+    }
     .Display{
         box-shadow: 3px 3px 6px greenyellow;
         
