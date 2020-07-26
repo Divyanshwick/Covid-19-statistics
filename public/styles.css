@@ -290,7 +290,10 @@ tr:nth-child(even){
     height:150px;
     border:3px solid greenyellow;
     border-bottom: none;
+    color:whitesmoke;
+    padding-left:auto;
 }
+
 
 
 /* RESPONSIVENESS */
