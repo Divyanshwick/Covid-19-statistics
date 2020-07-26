@@ -291,7 +291,11 @@ tr:nth-child(even){
     border:3px solid greenyellow;
     border-bottom: none;
     color:whitesmoke;
-    padding-left:auto;
+    
+}
+.footer small{
+    color:whitesmoke;
+    font-size: xx-small;
 }
 
 
